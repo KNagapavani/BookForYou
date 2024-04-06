@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book For You</title>
+    <!-- Bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Title Icon -->
+    <link rel="icon" href="Images/titlle.png" type="image/png">
+    <!-- fontaweson icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="book.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Dancing script -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Fira+Sans:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <!-- Nunito Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Fira+Sans:wght@300&family=Nunito+Sans:ital,opsz@1,6..12&family=Poppins&display=swap" rel="stylesheet">
+    <!-- Libre Franklin -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Fira+Sans:wght@300&family=Libre+Franklin:ital,wght@1,300&family=Nunito+Sans:ital,opsz@1,6..12&family=Poppins&display=swap" rel="stylesheet">
+    <!-- bootstrap cdn links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+<body class="bg bg-dark">
+    <!-- Header  -->
+    <header id="header">
+        <nav class="navbar navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Images/titlle.png" alt="..." height="40px" width="40px">Book For You</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+          <span class="navbar-text">
+              <a href="#" id="btn-heart" onclick="wishlist()" class="bi bi-heart-fill"></a>
+              <a href="#" id="btn-cart" onclick="cart()" class="bi bi-cart4"></a>
+              <div id="login-btn" class="fa-solid fa-user"></div>
+          </span>
+        </div>
+      </nav> 
+      <!-- Navigation starts  -->
+        <nav class="navbar navbar-expand-sm justify-content-center nav2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" id="home" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#genre">Genre</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#arrivals">Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#services">Services</a>
+                      </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    
+                </ul>
+              </div>
+        </nav>
+        <!-- End of navigation -->
+     
+  </header>
+
+  <!--Bottom navigation  -->
+  <nav class="bottom-navbar">
+    <a href="#home" class="fa-solid fa-house"></a>
+    <a href="#genre" class="fa-solid fa-list"></a>
+    <a href="#arrivals" class="fa-solid fa-tags"></a>
+    <a href="#services" class="fa-solid fa-gears"></a>
+    <a href="#reviews" class="fa-solid fa-comment"></a>
+    
+</nav>
+  <!-- End of bottom navigation -->
+
+  <!-- signin form -->
+  <div class="signin">
+    <div id="close-login" class="bi bi-x text-white"></div>
+    <form action="" onsubmit="return validateForm()">
+         <h3>Sign in</h3>
+         <span>Username</span>
+         <input type="email" class="box" name="emailid" id="emailid" placeholder="Enter Your Email Id">
+         <span id="usererror" class="error"></span>
+         <span>Password</span>
+         <input type="password" class="box" name="password" id="password" placeholder="Enter your Password">
+         <span id="passworderror" class="error"></span>
+         <div class="checkbox">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me"> Remember me</label>
+         </div>
+         <input type="submit" value="Log in" class="btn">
+         <p>forget password ? <a href="#">Click Here</a></p>
+         <p>don't have an account ? <a href="#">Create Account</a></p>
+    </form>
+
+</div>
+<!-- End of sign-in form -->
+
+  <!-- Image Slider-carousel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="Images/bg-img1.jpg" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption">
+          <h1>Meet your next favorite book</h1>
+          
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Images/bg-img2.jpg" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption">
+          <h1>A book is a gift you can open again and again</h1>
+         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/bg-img3.jpg" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption">
+          <h1>There is no friend as loyal as book</h1>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Images/bg-img4.jpg" class="d-block w-100" alt="..." height="400px">
+        <div class="carousel-caption">
+          <h1>Lost in the pages, found in my soul</h1>
+         
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End of Carousel -->
+
+  <!-- Genre section -->
+  <div class="container mt-3">
+    <div id="genre">
+      <h2>Genre</h2>
+    </div>
+    <br>
+
+    <div class="nav nav-pills">
+      <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Fiction</button>
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Non-Fiction</button>
+        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Fantacy</button>
+        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Thriller</button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+          <div id="news" class="container service">
+          <div class="row m-2 genre-slider">
+              <div class="col-md-12">
+                  <h2 class="service-head">Fiction</h2>
+              </div>
+                <div class="col-lg-4 col-md-6 mt-4" >
+                   
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Fiction/f1.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title text-white"><a href="">The Kite Runner</a></h3>
+                            <center><p class="card-text">Rs.400/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Fiction/f2.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title text-white"><a href=''>The hobbit</a></h3>
+                            
+                            <center><p class="card-text">Rs.500/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                   
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Fiction/f3.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Dracula</a></h3>
+                            <center><p class="card-text">Rs.699/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+          <div id="news" class="container service">
+          <div class="row m-2">
+              <div class="col-md-12">
+                  <h2 class="service-head">Non-Fiction</h2>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                 
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Nonfiction/n1.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Silent Spring</a></h3>
+                        <center><p class="card-text">Rs.600/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                 </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                 
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Nonfiction/n2.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Hiroshima</a></h3>
+                            <center><p class="card-text">Rs.500/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                 
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Nonfiction/n3.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Walk In The Woods</a></h3>
+                            <center><p class="card-text">Rs.700/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+          <div id="news" class="container service">
+          <div class="row m-2">
+              <div class="col-md-12">
+                  <h2 class="service-head">Fantacy-Fiction</h2>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                 
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fantacy Fiction/ff1.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Harry Potter</a></h3>
+                        <center><p class="card-text">Rs.699/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                 </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                 
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Fantacy Fiction/ff2.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Dune</a></h3>
+                            <center><p class="card-text">Rs.499/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                 
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Fantacy Fiction/ff3.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Game Of Thrones</a></h3>
+                            <center><p class="card-text">Rs.899/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+          <div id="news" class="container service">
+          <div class="row m-2">
+              <div class="col-md-12">
+                  <h2 class="service-head">Thriller-Fiction</h2>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                 
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Thriller/thriller1.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Ruined</a></h3>
+                        <center><p class="card-text">Rs.599/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                 </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                 
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Thriller/thriller2.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">The Bride</a></h3>
+                            <center><p class="card-text">Rs.799/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                 
+                    <div class="card">
+                      <div class="icons">
+                          <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                          <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                          <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                      </div>
+                        <img src="Images/Genre/Thriller/thriller3.jpg" class="card-img-top" height="300px" width="500px">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">The Heist</a></h3>
+                            <center><p class="card-text">Rs.699/-</p></center>
+                            <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
+  
+
+  <!-- End of genre section-->
+
+  <!-- new arrivals start -->
+  <div id="arrivals" class="container"><br>
+    <div id="news" class="container service">
+        <div class="row m-2">
+          <div class="col-md-12">
+              <h2 class="service-head">Arrivals</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4">
+             
+            <div class="card">
+              <div class="icons">
+                  <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                  <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                  <a href="#" class="fa-solid fa-thumbs-down"></a>
+              </div>
+                <img src="Images/Genre/Historical fiction/h1.jpg" class="card-img-top" height="300px" width="500px">
+                <div class="card-body">
+                    <h3 class="card-title"><a href="">Kalki</a></h3>
+                    <center><p class="card-text">Rs.1199/-</p></center>
+                    <center><a href="#" class="btn btn-dark button">ADD TO CART</a></center>
+                </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fairy tale/f2.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-size: 20px;"><a href="">Midsummer Night's Dream</a></h3>
+                        <center><p class="card-text">Rs.499/-</p></center>
+                        <center><a href="#" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Historical fiction/h5.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Last Magician</a></h3>
+                        <center><p class="card-text">Rs.899/-</p></center>
+                        <center><a href="#" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+  <!-- End of new arrivals -->
+
+  <!-- service section -->
+  <div class="container service">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="service-head" id="services">Services</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 box">
+            <div class="service-box">
+                <i class="bi bi-airplane-fill"></i>
+                <h3>Free Shipping</h3>
+                <p>Order Over Rs.50,000/-</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 box">
+            <div class="service-box">
+              <i class="bi bi-shield-lock-fill"></i>
+                <h3>secure payment</h3>
+                <p>100% security guranty</p>
+                
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 box">
+            <div class="service-box">
+              <i class="bi bi-headset"></i>
+                <h3>24/7 support</h3>
+                <p>call us anytime</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 box">
+          <div class="service-box">
+            <i class="bi bi-arrow-clockwise"></i>
+                <h3>Easy returns</h3>
+                <p>10 daysreturns</p>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-4 box">
+        <div class="service-box">
+          <i class="bi bi-award"></i>
+                <h3>Original Books</h3>
+                <p>Every book is original</p>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- End of service section -->
+
+  <!-- review section -->
+
+  <section>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h2 class="mb-4" id="reviews">Client's Review</h2>
+      </div>
+    </div>
+  
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0 creview">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="Images/r1.jpg" class="rounded-circle" width="150" height="150" />
+        </div>
+        <h3 class="mb-3">Amy</h3>
+        <p class="px-xl-3">
+          <i class="bi bi-quote"></i>
+          Minka Kent is one of my trusted authors that I turn to when I'm in the mood for a fast paced and entertaining thriller.
+          <i class="fa-solid fa-quote-right"></i>
+        </p>
+        <div class="d-flex justify-content-center mb-0">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star-half-alt text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0 creview">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="Images/r6.jpg"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h3 class="mb-3">Elliot</h3>
+        
+        <p class="px-xl-3">
+          <i class="bi bi-quote"></i>
+          I absolutely loved this heartbreakingly beautiful piece of writing! I'd give this book 10 stars if I could!! I didn't want it to end.
+          <i class="fa-solid fa-quote-right pe-2"></i>
+        </p>
+        
+          <div class="d-flex justify-content-center mb-0">
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+            <i class="fa fa-star text-warning"></i>
+          </div>
+        
+      </div>
+      <div class="col-md-4 mb-0 creview">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="Images/r2.jpg"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h3 class="mb-3">Jennifer</h3>
+        
+        <p class="px-xl-3">
+          <i class="bi bi-quote"></i>
+          I enjoyed this a lot! It's a fair bit darker than the author's other books, with a gothic atmosphere that I enjoyed immensely.
+          <i class="fa-solid fa-quote-right pe-2"></i>
+        </p>
+        <div class="d-flex justify-content-center mb-0">
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- End of review section -->
+
+<!-- Form Section -->
+<div class="container p-4">
+  <section class="form-section subscribe">
+    <form  onsubmit="return subscribe()">
+      <div class="row d-flex justify-content-center">
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Sign up for our Latest Books</strong>
+          </p>
+        </div>
+       
+        <div class="col-md-5 col-12">
+          <div class="form-outline mb-4">
+            <input type="email" id="email" class="form-control" placeholder="Enter Email-Id..." required/>
+            
+          </div>
+        </div>
+        
+        <div class="col-auto" >
+          <button type="submit" class="btn btn-outline mb-4" id="btn-subscribe">
+            Subscribe
+          </button>
+        </div>
+        
+      </div>
+      
+    </form>
+  </section>
+</div>
+<!--end of Form -->
+
+<!-- Social media start-->
+<div class="container p-4">
+  <section class="mb-4 social-media">
+    <div class="d-flex justify-content-center">
+      <h4>Follow us : </h4>
+    </div>
+    <div class="d-flex justify-content-center ion">
+    <a class="btn btn-outline rounded-circle m-1" href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569855%7Cb%7Cfacebook%7C&placement=&creative=589460569855&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-592856129%26loc_physical_ms%3D9062121%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA-bmsBhAGEiwAoaQNmoxgHjRHYq5_KV5oW7fMFe04nWs6jG4LXRRn9-w1UP9wTC-zqWUwSRoC5G8QAvD_BwE" role="button"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="btn btn-outline rounded-circle m-1" href="https://twitter.com/i/flow/login" role="button"><i class="fa-brands fa-twitter"></i></a>
+    <a class="btn btn-outline rounded-circle m-1" href="https://www.google.co.in/" role="button"><i class="fa-brands fa-google"></i></a>
+    <a class="btn btn-outline rounded-circle m-1" href="https://www.instagram.com/" role="button"><i class="fa-brands fa-instagram"></i></a>
+    <a class="btn btn-outline rounded-circle m-1" href="https://in.linkedin.com/" role="button"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a class="btn btn-outline rounded-circle m-1" href="https://github.com/login" role="button"><i class="fa-brands fa-github"></i></a>
+  </div>
+  </section>
+</div>
+<!--End of Social media -->
+
+<!-- Footer section-->
+<div id="footer-sidebar">
+  <div class="container d-inline-block">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-4 mb-md-0">
+          <div class="footer-widget">
+            <h4>About</h4>
+            <ul>
+              <li><a href='#'><i class="bi bi-shield-shaded"></i>Privacy Policy</a></li>
+              <li><a href='#'><i class="bi bi-journal-check"></i>Terms and Conditions</a></li>
+              <li><a href='#'><i class="bi bi-exclamation-triangle-fill"></i>Disclaimer</a></li>
+              <li><a href='#'><i class="bi bi-c-circle"></i>Copyright</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-4 mb-md-0">
+          <div class="footer-widget">
+            <h4>Genre</h4>
+            <ul>
+              <li><a href="#pills-fiction"><i class="bi bi-arrow-right"></i>Fiction</a></li>
+              <li><a href="#pills-nonfiction"><i class="bi bi-arrow-right"></i>Non-Fiction</a></li>
+              <li><a href="#pills-fantacy"><i class="bi bi-arrow-right"></i>Fantacy-Fiction</a></li>
+              <li><a href="#pills-thriller"><i class="bi bi-arrow-right"></i>Thriller-Fiction</a></li>
+              <li><a href="#arrivals"><i class="bi bi-arrow-right"></i>Arrivals</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-4 mb-md-0">
+          <div class="footer-widget">
+            <h4>Address</h4>
+            <address>
+              <b> BookForYou.</b><br>
+                205-Fortune<br>
+                Kukatpally,Hyderabad INDIA<br>
+                Ph: +91-7807208725.
+            </address>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-4 mb-md-0">
+          <div class="footer-widget">
+            <h4>Location</h4>
+            <ul class="location">
+              <li><a href=""><i class="bi bi-geo-alt-fill"></i>India</a></li>
+              <li><a href=""><i class="bi bi-geo-alt-fill"></i>UK</a></li>
+              <li><a href=""><i class="bi bi-geo-alt-fill"></i>Italy</a></li>
+              <li><a href=""><i class="bi bi-geo-alt-fill"></i>Canada</a></li>
+              <li><a href=""><i class="bi bi-geo-alt-fill"></i>USA</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<div id="footer">
+  <div class="row">         
+      <div class="d-flex justify-content-center">
+          @2023<a href="">BookForYou</a> .All rights reserved. 
+      </div>
+  </div>
+    <div class="row">         
+      <div class="d-flex justify-content-center">
+        Designed by <a href="">Pavani</a>
+      </div>
+    </div>  
+</div>  
+
+ 
+<!-- End of Footer -->
+<script src="book.js"></script>
+  
+</body>
+</html>

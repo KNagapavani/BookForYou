@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+    <!-- <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+          
+          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+            <div id="news" class="container service">
+            <div class="row m-2 genre-slider">
+                <div class="col-md-12">
+                    <h2 class="service-head">Fiction</h2>
+                </div>
+                  <div class="col-lg-4 col-md-6 mt-4" >
+                     
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Fiction/f1.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title text-white"><a href="">The Kite Runner</a></h3>
+                              <center><p class="card-text">Rs.400/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Fiction/f2.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title text-white"><a href=''>The hobbit</a></h3>
+                              
+                              <center><p class="card-text">Rs.500/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                     
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Fiction/f3.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">Dracula</a></h3>
+                              <center><p class="card-text">Rs.699/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+            <div id="news" class="container service">
+            <div class="row m-2">
+                <div class="col-md-12">
+                    <h2 class="service-head">Non-Fiction</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                   
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Nonfiction/n1.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Silent Spring</a></h3>
+                          <center><p class="card-text">Rs.600/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                   
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Nonfiction/n2.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">Hiroshima</a></h3>
+                              <center><p class="card-text">Rs.500/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                   
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Nonfiction/n3.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">Walk In The Woods</a></h3>
+                              <center><p class="card-text">Rs.700/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+            <div id="news" class="container service">
+            <div class="row m-2">
+                <div class="col-md-12">
+                    <h2 class="service-head">Fantacy-Fiction</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                   
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fantacy Fiction/ff1.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Harry Potter</a></h3>
+                          <center><p class="card-text">Rs.699/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                   
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Fantacy Fiction/ff2.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">Dune</a></h3>
+                              <center><p class="card-text">Rs.499/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                   
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Fantacy Fiction/ff3.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">Game Of Thrones</a></h3>
+                              <center><p class="card-text">Rs.899/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+            <div id="news" class="container service">
+            <div class="row m-2">
+                <div class="col-md-12">
+                    <h2 class="service-head">Thriller-Fiction</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                   
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Thriller/thriller1.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Ruined</a></h3>
+                          <center><p class="card-text">Rs.599/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                   
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Thriller/thriller2.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">The Bride</a></h3>
+                              <center><p class="card-text">Rs.799/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4">
+                   
+                      <div class="card">
+                        <div class="icons">
+                            <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                            <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                            <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                        </div>
+                          <img src="Images/Genre/Thriller/thriller3.jpg" class="card-img-top" height="300px" width="500px">
+                          <div class="card-body">
+                              <h3 class="card-title"><a href="">The Heist</a></h3>
+                              <center><p class="card-text">Rs.699/-</p></center>
+                              <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Nav tabs -->
+     <!-- <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="btn-tab" data-bs-toggle="pill" data-bs-target="#pills-fiction" type="button" role="tab" aria-controls="pills-fiction" aria-selected="true">Fiction</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="btn-tab" data-bs-toggle="pill" data-bs-target="#pills-nonfiction" type="button" role="tab" aria-controls="pills-nonfiction" aria-selected="false">Non-Fiction</button>
+      </li>
+    </ul>  -->
+      <!-- Tab panes  -->
+     <!-- fiction section -->
+
+    <!-- <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-fiction" role="tabpanel" aria-labelledby="btn-tab" tabindex="0">
+        <div id="news" class="container service">
+          <div class="row m-2 genre-slider">
+            <div class="col-md-12">
+                <h2 class="service-head">Fiction</h2>
+            </div>
+              <div class="col-lg-4 col-md-6 mt-4" >
+                 
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fiction/f1.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title text-white"><a href="">The Kite Runner</a></h3>
+                          <center><p class="card-text">Rs.400/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fiction/f2.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title text-white"><a href=''>The hobbit</a></h3>
+                          
+                          <center><p class="card-text">Rs.500/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                 
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fiction/f3.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Dracula</a></h3>
+                          <center><p class="card-text">Rs.699/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                 
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fiction/f4.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Time traveler's wife</a></h3>
+                          
+                          <center><p class="card-text">Rs.599/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fiction/f5.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">It Ends with us</a></h3>
+                          <center><p class="card-text">Rs.799/-</p></center>
+                          <center><ADD href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              
+              
+              <div class="col-lg-4 col-md-6 mt-4">
+                 
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Fiction/newf6.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">trust</a></h3>
+                          <center><p class="card-text">Rs.999/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div> -->
+    
+      <!-- end of fiction section -->
+
+      <!-- non-fiction section -->
+
+      <!-- <div class="tab-pane fade" id="pills-nonfiction" role="tabpanel" aria-labelledby="btn-tab" tabindex="0">
+        <div id="news" class="container service">
+          <div class="row m-2">
+            <div class="col-md-12">
+                <h2 class="service-head">Non-Fiction</h2>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+               
+              <div class="card">
+                <div class="icons">
+                    <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                    <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                    <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                </div>
+                  <img src="Images/Genre/Nonfiction/n1.jpg" class="card-img-top" height="300px" width="500px">
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="">Silent Spring</a></h3>
+                      <center><p class="card-text">Rs.600/-</p></center>
+                      <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                  </div>
+               </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Nonfiction/n2.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Hiroshima</a></h3>
+                          <center><p class="card-text">Rs.500/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Nonfiction/n3.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Walk In The Woods</a></h3>
+                          <center><p class="card-text">Rs.700/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Nonfiction/n4.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Astrophysics</a></h3>
+                          <center><p class="card-text">Rs.899/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Nonfiction/n5.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Coates</a></h3>
+                          <center><p class="card-text">Rs.999/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Nonfiction/newn6.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">To Free The Captives</a></h3>
+                          <center><p class="card-text">Rs.1199/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div> 
+      </div>
+    </div> -->
+
+    <!-- End of non-fiction section -->
+
+
+    <!-- <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link ft active" id="btn-tab" data-bs-toggle="pill" data-bs-target="#pills-fantacy" type="button" role="tab" aria-controls="pills-fantacy" aria-selected="true">Fantacy-Fiction</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link ft" id="btn-tab" data-bs-toggle="pill" data-bs-target="#pills-thriller" type="button" role="tab" aria-controls="pills-thriller" aria-selected="false">Thriller-Fiction</button>
+      </li>
+    </ul> -->
+    <!-- Fantacy -->
+    <!-- <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-fantacy" role="tabpanel" aria-labelledby="btn-tab" tabindex="0">
+        <div id="news" class="container service">
+        <div class="row m-2">
+          <div class="col-md-12">
+              <h2 class="service-head">Fantacy-Fiction</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4">
+             
+            <div class="card">
+              <div class="icons">
+                  <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                  <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                  <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+              </div>
+                <img src="Images/Genre/Fantacy Fiction/ff1.jpg" class="card-img-top" height="300px" width="500px">
+                <div class="card-body">
+                    <h3 class="card-title"><a href="">Harry Potter</a></h3>
+                    <center><p class="card-text">Rs.699/-</p></center>
+                    <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fantacy Fiction/ff2.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Dune</a></h3>
+                        <center><p class="card-text">Rs.499/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fantacy Fiction/ff3.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Game Of Thrones</a></h3>
+                        <center><p class="card-text">Rs.899/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fantacy Fiction/ff4.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-size: 20px;"><a href="">Wizard Of The Earth sea</a></h3>
+                        <center><p class="card-text">Rs.799/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fantacy Fiction/ff5.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Narnia</a></h3>
+                        <center><p class="card-text">Rs.899/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+             
+                <div class="card">
+                  <div class="icons">
+                      <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                      <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                      <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                  </div>
+                    <img src="Images/Genre/Fantacy Fiction/newff6.jpg" class="card-img-top" height="300px" width="500px">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Percy Jackson</a></h3>
+                        <center><p class="card-text">Rs.899/-</p></center>
+                        <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        </div>
+      </div> -->
+      <!-- End of fantacy section -->
+       <!-- Thriller section -->
+      <!-- <div class="tab-pane fade" id="pills-thriller" role="tabpanel" aria-labelledby="btn-tab" tabindex="0">
+        <div id="news" class="container service">
+          <div class="row m-2">
+            <div class="col-md-12">
+                <h2 class="service-head">Thriller-Fiction</h2>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+               
+              <div class="card">
+                <div class="icons">
+                    <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                    <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                    <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                </div>
+                  <img src="Images/Genre/Thriller/thriller1.jpg" class="card-img-top" height="300px" width="500px">
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="">Ruined</a></h3>
+                      <center><p class="card-text">Rs.599/-</p></center>
+                      <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                  </div>
+               </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Thriller/thriller2.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">The Bride</a></h3>
+                          <center><p class="card-text">Rs.799/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Thriller/thriller3.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">The Heist</a></h3>
+                          <center><p class="card-text">Rs.699/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Thriller/thriller4.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">The Blue Monsoon</a></h3>
+                          <center><p class="card-text">Rs.899/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Thriller/thriller5.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Unmissing</a></h3>
+                          <center><p class="card-text">Rs.1099/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4">
+               
+                  <div class="card">
+                    <div class="icons">
+                        <a href="#" id="btn-like" onclick="like()" class="fa-solid fa-thumbs-up"></a>
+                        <a href="#" id="btn-hearts" onclick="heart()" class="fa fa-heart"></a>
+                        <a href="#" id="btn-dislike" onclick="dislike()" class="fa-solid fa-thumbs-down"></a>
+                    </div>
+                      <img src="Images/Genre/Thriller/newthriller6.jpg" class="card-img-top" height="300px" width="500px">
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="">Gone Again</a></h3>
+                          <center><p class="card-text">Rs.1299/-</p></center>
+                          <center><a href="#" id="btn-addtocart" onclick="addtocart()" class="btn btn-dark button">ADD TO CART</a></center>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+      </div>
+    </div> -->
+    <!-- End of thriller section -->
+</body>
+</html>

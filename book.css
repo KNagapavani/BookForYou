@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing script';
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+} 
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* header section */
+.container-fluid .navbar-brand{
+    color: orangered;
+    font-size: 30px;
+}
+.container-fluid .navbar-brand img{
+    margin-right: 6px;
+}
+.container-fluid form{
+    width: 600px;
+}
+.container-fluid .btn{
+    background:transparent;
+}
+.container-fluid span a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+.container-fluid span a{
+    font-size: 25px;
+    color: orangered;
+}
+.container-fluid span #login-btn{
+    margin-left: 10px;
+    margin-right: 30px;
+    font-size: 25px;
+    color: orangered;
+}
+
+/* Media Queries */
+@media (max-width:768px){
+    .container-fluid .navbar-brand{
+        font-size: 20px;
+    }
+    .container-fluid form{
+        width: 300px;
+    }
+    .container-fluid span a{
+        font-size: 20px;
+    }
+    .container-fluid span #login-btn{
+        font-size: 20px;
+    }
+}
+@media (max-width:429px){
+    .container-fluid .navbar-brand{
+        font-size: 15px;
+    }
+    .container-fluid form{
+        height: 30px;
+        width: 120px;
+        font-size: 16px;
+    }
+    .container-fluid span a{
+        font-size: 15px;
+        height: 40px;
+        width: 10px;
+    }
+    .container-fluid span a i{
+        font-size: 10px;
+        padding: 0;
+        margin-top: 0;
+    }
+    .container-fluid span #login-btn{
+        font-size: 15px;
+    }
+    .container-fluid .navbar-brand img{
+        height: 30px;
+        width: 30px;
+        margin-right: 6px;
+    }
+    .container-fluid span #login-btn{
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+}
+@media (max-width:329px){
+    .container-fluid span{
+        display: none;
+    }
+}
+/* login */
+.signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(53, 51, 51, 0.9);
+    position: fixed;
+    top: 0;
+    right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.signin.active{
+    right: 0;
+}
+.signin form{
+    background: black;
+    border: 1px solid rgb(225, 71, 14);
+    width: 25rem;
+    height: 29rem;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(255, 225, 225, 0.1);
+    border-radius: .5rem;
+    margin: 1rem;
+    color: white;
+    overflow-y: hidden;
+}
+.signin form h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgb(225, 71, 14);
+    text-align: center;
+}
+.signin form span{
+    display: block;
+    font-size: 1rem;
+    color: white;
+}
+.signin form .box{
+    margin: .7rem 0;
+    font-size: 1rem;
+    width: 100%;
+    height: 4px;
+    border: 1px solid rgb(225, 71, 14);
+    padding: 1rem 1.2rem;
+    color: white;
+    background: black;
+    text-transform: none;
+}
+.signin form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: 1rem 0;
+}
+.btn{
+    margin-top: 0rem;
+    display: inline-block;
+    padding: .1rem 2rem;
+    border-radius: .5rem;
+    color: white !important;
+    background: orangered !important;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover{
+    color: #444 !important;
+}
+.signin form .checkbox label{
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(225, 71, 14);
+}
+.signin form .btn{
+    text-align: center;
+    width: 100%;
+    margin: .5rem 0;
+}
+.signin form p{
+    padding-top: .5rem;
+    color: white;
+    font-size: 1rem;
+}
+.signin form p a{
+    color: rgb(225, 71, 14);
+    text-decoration: underline;
+}
+.signin #close-login{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Navigation */
+.nav2{
+    margin-top: 65px;
+    background-color: orangered;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.navbar-nav .nav-item .nav-link .active{
+    color: white;
+    font-size: 22px;
+}
+.navbar-nav .nav-item a:hover{
+    color: #444;
+}
+/* media queries */
+@media (max-width:768px){
+    .nav2{
+        margin-top: 60px;
+        height: 50px;
+    }
+}
+@media (max-width : 429px){
+    .nav2{
+        margin-top: 40px;    
+    }
+}
+
+/* bottom navigation */
+.bottom-navbar{
+    text-align: center;
+    background: rgb(225, 71, 14);
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+.bottom-navbar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+}
+.bottom-navbar a:hover{
+    color: #444;
+}
+/* media queries */
+@media (max-width:700px){
+    html{
+        scroll-padding-top: 0;
+    }
+    body{
+        padding-bottom: 4rem;
+    }
+    .bottom-navbar{
+        display: block;
+    }
+}
+
+/* carousel */
+
+.carousel-inner .carousel-caption h1{
+    color: orangered;
+}
+/* mediaqueries */
+@media (max-width:768px){
+    .carousel-inner img{
+        height: 300px;
+    }
+}
+@media (max-width:425px){
+    .carousel-inner img{
+        height: 240px;
+    }
+    .carousel-inner h1{
+        font-size: 20px;
+    }
+}
+
+/* nav tabs */
+.container .nav{
+    display: flex;
+    justify-content: center;
+}
+.container .nav .nav-link{
+    text-decoration: none;
+    color: orangered;
+    font-size: 20px;
+    background:transparent;
+    border: 1px solid orangered;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.nav-link{
+    color: white !important;
+    background-color: orangered !important;
+}
+/* genre section */
+.container h2{
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-shadow: 0 5px 10px rgb(170, 136, 124);
+}
+
+.card{
+    box-shadow:  0 5px 10px rgb(170, 136, 124);
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(15deg,#000 30%, #444 30.1%);
+    padding: 5px 20px;
+    width: 18rem;
+    height: 23rem;
+    margin: 2rem 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.card:hover{
+    border: 1px solid orangered;
+    transform: scale(1.03);
+  }
+.card .icons{
+    border-bottom: .1rem solid #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:black;
+    z-index: 1;
+    transform: translateY(-100%);
+  }
+.card:hover .icons{
+    transform: translateY(0%);
+  }
+.card .icons a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 1.5rem;
+    padding:1rem 1rem;
+  }
+.card .icons a:hover{
+    background: black;
+    color: white;
+  }
+.card:hover img{
+    transform: translateY(4rem);
+  }
+.card img{
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card .card-body{
+    padding: 1.5rem;    
+  }
+.card .card-body h3{
+    font-size: 22px;
+    color: #fff;
+  }
+.card .card-body h3 a{
+    text-decoration: none;
+    color: white;
+  }
+.card .card-body .card-text{
+    font-size: 1.2rem;
+    padding-top: .5rem;
+    color: orangered;
+    line-height: 1.8;
+  }
+  .card .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 2rem;
+    border-radius: .5rem;
+    color: white;
+    background: orangered;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+ .card .btn:hover{
+    background: #444;
+}
+
+/* mediaqueries */
+@media (max-width : 1024px){
+    .card{
+        margin: auto;
+    }
+}
+@media (max-width:327px){
+    .card{
+        margin-right: 100px;
+        width: 15rem;
+        height: 24rem;
+    }
+}
+
+/* services */
+.service {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.service h2{
+    margin-bottom: 100px;
+}
+.service .box{
+    margin-bottom: 50px;
+}
+.service-box {
+    text-align: center;
+    color: white;
+}
+.service-box i {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.service .service-box h3{
+    font-size: 2rem;
+    color: orangered;
+    padding-bottom: .5rem;
+}
+.service .service-box p{
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* reviews */
+
+#reviews{
+    color: orangered;
+    text-shadow: 0 5px 10px rgb(170, 136, 124);
+    padding-bottom: 80px;
+}
+.creview img{
+    border: 8px solid #444;
+    box-shadow: 0 5px 10px rgb(170, 136, 124);
+}
+.creview img:hover{
+    border: 8px solid orangered;    
+}
+.creview h3{
+    color: orangered;
+}
+.creview p{
+    color: white;
+}
+.creview i{
+    font-size: smaller;
+    color: orangered;
+}
+
+/* social media */
+.container .social-media{
+    text-decoration: none;
+    color: orangered;
+    text-shadow: 0 5px 10px rgb(170, 136, 124);
+}
+.container .social-media .ion a{
+    color: white;
+    background-color: #444 !important;
+    border: 1px solid #444;
+    box-shadow: 0 5px 10px #444 ;
+}
+.container .social-media .ion a:hover{
+    transform: scale(1.23);
+}
+
+/* footer */
+.form-section{
+    margin-top: 100px;
+}
+
+.container .form-section strong{
+    color: orangered;
+    font-size: 30px;
+    padding-right: 90px;
+}
+.subscribe{
+    background: url('Images/sub1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-section .btn{
+    display: inline-block;
+    border-radius: .5rem;
+    color: white;
+    background-color: orangered;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  @media (max-width:429px){
+    .container .form-section strong{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 60px;
+    }
+    .form-section input{
+        width: 200px;
+        margin-left: 80px;
+    }
+  }
+
+  /* footer section */
+#footer-sidebar {
+    color: orangered;
+    background:black;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-widget h4:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+.footer-widget a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-widget a i{
+    color: orangered;
+    margin-right: 10px;
+}
+.footer-widget a:hover{
+    color: #444;
+}
+.location li {
+    margin-bottom: 3px;
+}
+address{
+    color: white;
+}
+address b{
+    color: orangered;
+}
+#footer {
+    background-color: orangered;
+    color: black;
+    padding: 10px 0;  
+    height: 60px;
+    width: 100%;
+    overflow-y: hidden;  
+}
+#footer .row a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+}
+
